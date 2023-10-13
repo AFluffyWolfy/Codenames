@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_back_arrow"
+        android:layout_margin="@dimen/smaller_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/retour" />
+
+    <TextView
+        android:id="@+id/page_title"
+        style="@style/TitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/options"
+        app:layout_constraintBottom_toBottomOf="@+id/back_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/back_button" />
+
+    <LinearLayout
+        android:id="@+id/horizontal_team_recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginStart="@dimen/default_margin"
+        android:foregroundGravity="center_horizontal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page_title">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/first_team_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:name="helmo.mobile.codenames.activities.TeamOptionItemFragment"
+            tools:layout="@layout/fragment_team_option_item" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/second_team_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:name="helmo.mobile.codenames.activities.TeamOptionItemFragment"
+            tools:layout="@layout/fragment_team_option_item" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/buzzer_sound_title"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_margin"
+        android:text="@string/buzzer_sound"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_team_recycler" />
+
+    <Spinner
+        android:id="@+id/spinner_buzzer_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buzzer_sound_title"
+        android:spinnerMode="dialog"
+        tools:listitem="@android:layout/select_dialog_singlechoice" />
+
+    <Button
+        android:id="@+id/confirm_option_button"
+        style="@style/DefaultButtonTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/buttons"
+        android:text="@string/save_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_buzzer_sound" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

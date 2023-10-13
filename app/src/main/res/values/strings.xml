@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Codenames</string>
+
+    <!-- Composants généraux -->
+    <string name="continue_game">Continuer</string>
+    <string name="newgame">Nouvelle partie</string>
+    <string name="options">Options</string>
+    <string name="how_to_play">Comment jouer ?</string>
+    <string name="first_team_name">Equipe Bleu</string>
+    <string name="second_team_name">Equipe Rouge</string>
+    <string name="author">Par Auquier Cyril et Lakeye Brian</string>
+
+    <!-- Page nouvelle partie -->
+    <string name="word_list">Liste de mots</string>
+    <string name="word_list_desc">Vous ne pouvez en sélectionner qu\'un !</string>
+
+    <!-- Page options -->
+    <string name="buzzer_sound">Son du buzzer</string>
+    <string name="record_your_sound">Enregistrer votre son</string>
+    <string name="change_team_name">Changer le nom d\'équipe</string>
+    <string name="change_team_picture">Changer l\'image</string>
+    <string name="save_settings">Appliquer les changements</string>
+
+    <!-- Page des règles -->
+    <string name="rules">Les joueurs sont séparés en deux équipes. Devant eux sont disposées 24 cartes (valeur variable) comportant un mot chacune. Une personne de chaque équipe est l\'« espion » et doit faire deviner à ses « agents » une partie de ces mots, mais sans jamais qu\'ils ne tombent sur le mot « assassin ». \n\n
+
+L\'équipe qui commence à le désavantage de devoir faire deviner un mot de plus que l\'autre équipe (8 au lieu de 7). \n\n
+
+À chaque tour, l\' « espion » de l\'équipe donne un indice (constitué d\'un mot), ainsi que le nombre de mots qu\'il pense faire deviner avec cet indice. Par exemple, il peut dire « banane 3 » pour faire deviner les mots « fruit », « singe » et « jaune ». Ses coéquipiers désignent alors des mots un par un, qu\'ils pensent correspondre à l\'indice. Quatre cas de figure : \n\n
+
+- Si le mot désigné est bien un mot à deviner, le mot est recouvert des couleurs de l\'équipe ;\n\n
+
+-	Si le mot désigné appartient à l\'autre équipe, il est recouvert des couleurs de l\'équipe adverse ;\n\n
+
+- Si le mot désigné n\'appartient à aucune équipe, on passe au tour de l\'équipe suivante ;\n\n
+
+-	Si le mot désigné est le mot « assassin », l\'équipe en question perd immédiatement la partie ;
+</string>
+    <string name="game_rules">Règles du jeu</string>
+    <string name="how_to_use">Comment utiliser l\'application ?</string>
+    <string name="rules_spy_button">Vue espion</string>
+    <string name="rules_spy_button_explaination">Sert à passer de la vue espion à la vue agent. En vue espion, les couleurs de toutes les cartes sont affichées mais on ne peut en sélectionner aucune.\n\nPour rappel, l\'espion doit faire deviner les mots de la couleur de son équipe, les agents doivents deviner</string>
+    <string name="rules_home_button">Retour acceuil</string>
+    <string name="rules_home_button_explaination">Vous ramène à l\'acceuil principal tout en sauvegardant l\'état de votre partie</string>
+    <string name="rules_skipturn_button">Passer son tour</string>
+    <string name="rules_skipturn_button_explaination">Permet de passer son tour. Des fois, il est plus avantageux de ne pas tenter le risque de tomber sur un mot noir ou le mot adverse !</string>
+
+    <!-- Page de jeu -->
+    <string name="skip_turn">Passer son tour</string>
+    <string name="spyview">Vue espion</string>
+    <string name="word_count_for_spy">Nombre de mot à trouver indiquer par l\'espion</string>
+    <string name="hint">Conseils</string>
+
+    <!-- Page de fin de partie -->
+    <string name="victory">Victoire !</string>
+    <string name="home">Accueil</string>
+    <string name="share">Partager</string>
+
+    <!-- Fragment TeamOptionsItem -->
+    <string name="team_name_hint">Nom de l\'équipe</string>
+    <string name="team_picture">Team Picture</string>
+    <string name="editer">Editer</string>
+    <string name="retour">Retour</string>
+    <string name="codenames_logo">Codenames Logo</string>
+    <string name="nb_choice_speakable">Choix du nombre de mots à donner</string>
+    <string name="home_btn_speakable">Bouton accueil</string>
+    <string name="skip_turn_btn_speakable">Bouton passer son tour</string>
+    <string name="spy_view_btn_speakable">Bouton pour montrer la vue espion</string>
+    <string name="default_score_blue">0/8</string>
+    <string name="default_score_red">0/7</string>
+    <string name="default_blue_team_name">Image de l\'équipe bleue</string>
+    <string name="default_red_team_name">Image de l\'équipe rouge</string>
+
+    <!-- PlayGameActivity -->
+    <string-array name="choice_number">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+</resources>

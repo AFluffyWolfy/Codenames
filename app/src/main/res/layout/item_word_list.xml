@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/word_list_card"
+    android:layout_width="120dp"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/buttons"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/lightGray">
+
+    <RadioButton
+        android:id="@+id/word_list_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/word_list_name"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liste mot"
+        android:textColor="@color/dark_maincolor"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="10dp" />
+
+</androidx.cardview.widget.CardView>
